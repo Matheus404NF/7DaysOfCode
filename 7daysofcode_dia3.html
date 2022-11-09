@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+
+<script>
+				// Frontend Ou Backend
+let frontendOuBackend = prompt("Olá! Você quer seguir para área de Front-End (se sim, por favor digite 1) ou seguir para a área de Back-End (se sim, por favor digite 2)?");
+
+while(frontendOuBackend != 1 && frontendOuBackend != 2){
+	alert("Entendi, mas infelizmente isso não é uma opção que precisamos para continuar. Quer tentar de novo? Se sim, basta clicar em 'OK'!");
+	frontendOuBackend = prompt("Olá! Você quer seguir para área de Front-End (se sim, por favor digite 1) ou seguir para a área de Back-End (se sim, por favor digite 2)?");
+	//return ;
+}
+				// React/Vue e C#/Java
+if(frontendOuBackend==1){
+	let reactVue = prompt("Ok! E você quer aprender React (por favor digite 1) ou aprender Vue (por favor digite 2)?");
+	if(reactVue != 1 &&   reactVue != 2 ){
+		alert("Nenhuma das 2? Sem problemas, há outras!");
+	}	
+
+} else if(frontendOuBackend==2) {
+	let cJava = prompt("Ok! E você quer aprender C# (por favor digite 1) ou aprender Java? (por favor digite 2)");
+	if(cJava != 1 &&   cJava != 2 ){
+		alert("Nenhuma das 2? Sem problemas, há outras!");
+	}	
+
+} else {
+
+}
+
+
+				// Especializacao Ou Fullstack
+let especializacaoOuFullstack = prompt("Continuando, você prefere se especializar na sua área escolhida (digite 1), ou se desenvolver para se tornar Fullstack (digite 2)? ");
+
+while(especializacaoOuFullstack != 1 && especializacaoOuFullstack != 2){
+	alert("Entendi, mas infelizmente isso não é uma opção que precisamos para continuar. Quer tentar de novo? Se sim, basta clicar em 'OK'!");
+	especializacaoOuFullstack = prompt("Continuando, você prefere se especializar na sua área escolhida (digite 1), ou se desenvolver para se tornar Fullstack (digite 2)? ");
+	//return ;
+}
+				// Quais Tecnologias
+if(especializacaoOuFullstack==1){
+	let quaisTecnologiasEspecializacao = prompt("Por fim, quais tecnologias você gostaria de se especializar? Por favor insira uma por vez, sempre clicando em OK após digitar cada. Quando não houver mais nenhuma, por favor digitar 'fim'.");
+	while (quaisTecnologiasEspecializacao != "fim" && quaisTecnologiasEspecializacao != "Fim" && quaisTecnologiasEspecializacao != "FIM"){
+		quaisTecnologiasEspecializacao = prompt("Por fim, quais tecnologias você gostaria de se especializar? Por favor insira uma por vez, sempre clicando em OK após digitar cada. Quando não houver mais nenhuma, por favor digitar 'fim'.");
+	}
+	alert("Certo, muito obrigado por suas respostas, elas nos ajudam muito a saber o que mais interessa os entrevistados!");
+	
+
+} else if(especializacaoOuFullstack==2) {
+	let quaisTecnologiasFullstack = prompt("Por fim, quais tecnologias você gostaria de conhecer? Por favor insira uma por vez, sempre clicando em OK após digitar cada. Quando não houver mais nenhuma, por favor digitar 'fim'.");
+	while (quaisTecnologiasFullstack != "fim" && quaisTecnologiasFullstack != "Fim" && quaisTecnologiasFullstack != "FIM"){
+		quaisTecnologiasFullstack = prompt("Por fim, quais tecnologias você gostaria de se especializar? Por favor insira uma por vez, sempre clicando em OK após digitar cada. Quando não houver mais nenhuma, por favor digitar 'fim'.");
+	}
+		alert("Certo, muito obrigado por suas respostas, elas nos ajudam muito a saber o que mais interessa os participantes!");
+
+
+} else {
+	//return	
+}
+
+
+
+//1. Se quer seguir para área de Front-End ou seguir para a área de Back-End.
+
+//2. Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de Back-End, poderá aprender C# ou aprender Java.
+
+//3. Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack. Você deve exibir na tela uma mensagem específica para cada escolha.
+
+//4. Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer. Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar respondendo ok para a pergunta: "Tem mais alguma tecnologia que você gostaria de aprender?", continue apresentando para ela o Prompt, para que ela complete o nome da tecnologia em questão. E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.
+
+</script>
