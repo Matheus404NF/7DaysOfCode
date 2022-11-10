@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+const numero = Math.floor(Math.random() * (10 - 0 + 1) + 0);
+let tentativa = prompt("Qual número você acha? Você tem no total 3 tentativas.");
+let i = 3-1
+
+for(i = 3-1; i>0; i--){
+	if(tentativa==numero){
+		alert("Parabens! Voce acertou!!");
+		break;
+		
+	} else if (tentativa != numero) {
+		tentativa = prompt(`Infelizmente nao é esse! Voce tem mais ${i} chances. Qual numero voce acha?`);	
+	}
+}
+
+if(i<=0){
+	alert(`Fim de jogo, que pena! O numero certo era ${numero}`); 
+}
+
+</script>
