@@ -1,0 +1,70 @@
+<meta charset="UTF-8">							
+							
+<script>							
+							
+let qualOperacao							
+let qualPrimeiroNumero							
+let qualSegundoNumero							
+							
+while(qualOperacao != "z" && qualPrimeiroNumero != "z" && qualSegundoNumero != "z" && qualOperacao != "Z" && qualPrimeiroNumero != "Z" && qualSegundoNumero != "Z" ) {							
+	qualOperacao = prompt("Ola! Escolha qual operacao deseja atraves da respectiva letra MINUSCULA: para soma: 'a'; para subtracao: 'b'; para multiplicacao: 'c'; para divisao: 'd'. Caso queira sair, apenas digite 'z'!");						
+	if(qualOperacao == "z" || qualOperacao == "Z"){						
+		break;					
+	}						
+	if(qualOperacao != "a" && qualOperacao != "b" && qualOperacao != "c" && qualOperacao != "d" && qualOperacao != "z" ){						
+		alert("Operacao inexistente! Se quiser recomecar, por favor reinicie a pagina");					
+		break;					
+	}						
+	qualPrimeiroNumero = prompt("Agora escolha o primeiro numero");						
+	qualSegundoNumero = prompt("Agora, escolha o segundo numero. Se quiser cancelar, apenas digite 'z'");						
+	if(qualPrimeiroNumero == "z" || qualPrimeiroNumero == "Z" || qualSegundoNumero == "z" || qualSegundoNumero == "Z" ){						
+		break;					
+	}						
+	if(isNaN(qualPrimeiroNumero) || isNaN(qualSegundoNumero)){						
+		alert("Sinto muito, as operacoes sao feitas apenas com numeros por aqui! Se quiser recomecar, apenas reinicie a pagina")					
+		break;					
+	}						
+	switch(qualOperacao){						
+		case "a":					
+			soma(qualPrimeiroNumero, qualSegundoNumero);				
+			break;				
+		case "b":					
+			subtracao(qualPrimeiroNumero, qualSegundoNumero);				
+			break;				
+		case "c":					
+			multiplicacao(qualPrimeiroNumero, qualSegundoNumero);				
+			break;				
+		case "d":					
+			divisao(qualPrimeiroNumero, qualSegundoNumero);				
+			break;				
+		case "z":					
+			sair				
+}							
+}							
+							
+							
+alert("Ate a proxima!");							
+							
+function soma(a, b) {							
+	alert(parseInt(a) + parseInt(b));						
+}							
+							
+function subtracao(a, b){							
+	alert(parseInt(a) - parseInt(b));						
+}							
+							
+function multiplicacao(a, b){							
+	alert(parseInt(a) * parseInt(b));						
+}							
+							
+function divisao(a, b){							
+	alert(parseInt(a) / parseInt(b));						
+}							
+							
+function sair(){							
+	return;						
+}							
+							
+</script>							
+							
+							
